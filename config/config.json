@@ -1,0 +1,58 @@
+{
+  "site": {
+    "title": "Andromeda Light Nextjs",
+    "base_url": "/",
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.svg",
+    "logo_width": "240",
+    "logo_height": "34",
+    "logo_text": "TFS"
+  },
+
+  "settings": {
+    "pagination": 6,
+    "summary_length": 200,
+    "blog_folder": "posts"
+  },
+
+  "params": {
+    "tag_manager_id": "UA-XXXXXXXXX-X",
+    "contact_form_action": "#",
+    "footer_content": "TFS Techno: Empowering businesses with innovative web and app solutions that drive growth, enhance user experience, and revolutionize industries worldwide.",
+    "copyright": "© 2024 TFS Techno. All rights reserved."
+  },
+
+  "contact_info": {
+    "phone": "+91-8824000428",
+    "email": "technofuturesoftware@gmail.com",
+    "location": "Triveni Nagar, Jaipur, Rajasthan"
+  },
+
+  "nav_button": {
+    "enable": true,
+    "label": "FREE MOCKUP",
+    "link": "https://themefisher.com/products/andromeda-light-nextjs"
+  },
+
+  "metadata": {
+    "meta_author": "Themefisher",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "Andromeda-light Nextjs Blog Template"
+  },
+
+  "call_to_action": {
+    "enable": true,
+    "title": "Get TFS Techno Solutions Now",
+    "content": "Transform your business with innovative web and app solutions. <br/> Join the digital revolution with TFS Techno's expertise in creating secure, fast, and scalable applications.",
+    "button": {
+      "label": "Get Started Now",
+      "link": "/contact"
+    }
+  },
+
+  "disqus": {
+    "enable": true,
+    "shortname": "themefisher-template",
+    "settings": {}
+  }
+}
