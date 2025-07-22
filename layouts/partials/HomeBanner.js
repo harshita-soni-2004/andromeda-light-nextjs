@@ -1,224 +1,69 @@
 "use client";
 
-import Circle from "@layouts/components/Circle";
-import ImageFallback from "@layouts/components/ImageFallback";
-import { gsap } from "@lib/gsap";
-import { markdownify } from "@lib/utils/textConverter";
+import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
-import { Autoplay } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
 
-const HomeBanner = ({ banner: bannerData, brands }) => {
-  useEffect(() => {
-    const ctx2 = gsap.context(() => {
-      const banner = document.querySelector(".banner");
-      const bannerBg = document.querySelector(".banner-bg");
-      const bannerContent = document.querySelector(".banner-content");
-      const header = document.querySelector(".header");
-      const tl = gsap.timeline();
-
-      tl.fromTo(
-        ".banner-title",
-        { y: 20, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.5, delay: 0.5 },
-      )
-        .fromTo(
-          ".banner-btn",
-          { y: 20, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.5 },
-          ">-0.4",
-        )
-        .fromTo(
-          ".banner-img",
-          {
-            y: 20,
-            opacity: 0,
-          },
-          {
-            y: 0,
-            opacity: 1,
-            duration: 0.5,
-          },
-          ">-.5",
-        );
-
-      //parallax banner
-      const parallaxTl = gsap.timeline({
-        ease: "none",
-        scrollTrigger: {
-          trigger: banner,
-          start: () => `top ${header?.clientHeight}`,
-          scrub: true,
-        },
-      });
-
-      const position = (banner.offsetHeight - bannerBg.offsetHeight) * 0.4;
-      parallaxTl
-        .fromTo(
-          bannerBg,
-          {
-            y: 0,
-          },
-          {
-            y: -position,
-          },
-        )
-        .fromTo(
-          bannerContent,
-          {
-            y: 0,
-          },
-          {
-            y: position,
-          },
-          "<",
-        )
-        .fromTo(
-          ".banner-bg .circle",
-          {
-            y: 0,
-          },
-          {
-            y: position,
-          },
-          "<",
-        );
-    });
-
-    return () => ctx2.revert();
-  }, []);
-
+export default function FlooristaHero({
+  title = "Techno Future Software",
+  subtitle = "Grow Your Business with us",
+  cta = { href: "/projects", label: "Explore Now" },
+  image = {
+    src: "/images/banner14.png",
+    alt: "Preview of premium carpets available at Florista",
+    width: 600,
+    height: 600,
+  },
+}) {
   return (
-    <section className="section banner bg-gradient-to-b pt-20 from-black via-zinc-900 to-zinc-950 text-white">
-      <div className="container-xl">
-        <div className="relative">
-          <div className="bg-theme banner-bg col-12 absolute left-0 top-0">
-            <Circle
-              className="circle left-[10%] top-12"
-              width={32}
-              height={32}
-              fill={false}
-            />
-            <Circle
-              className="circle left-[2.5%] top-[29%]"
-              width={85}
-              height={85}
-            />
-            <Circle
-              className="circle bottom-[48%] left-[22%]"
-              width={20}
-              height={20}
-            />
-            <Circle
-              className="circle bottom-[37%] left-[15%]"
-              width={47}
-              height={47}
-              fill={false}
-            />
-            <Circle
-              className="circle bottom-[13%] left-[6%]"
-              width={62}
-              height={62}
-              fill={false}
-            />
-            <Circle
-              className="circle right-[12%] top-[15%]"
-              width={20}
-              height={20}
-            />
-            <Circle
-              className="circle right-[2%] top-[30%]"
-              width={73}
-              height={73}
-              fill={false}
-            />
-            <Circle
-              className="circle right-[19%] top-[48%]"
-              width={37}
-              height={37}
-              fill={false}
-            />
-            <Circle
-              className="circle right-[33%] top-[54%]"
-              width={20}
-              height={20}
-            />
-            <Circle
-              className="circle bottom-[20%] right-[3%]"
-              width={65}
-              height={65}
-            />
+    <section
+      className="relative overflow-hidden bg-black text-white px-4  pb-16 sm:px-6 sm:pt-32 sm:pb-20 lg:px-8 lg:pt-40 lg:pb-28"
+      aria-label="Techno Future Software"
+    >
+      <DecorShapes />
+
+      <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center pt-24 gap-12 md:grid-cols-2 lg:gap-20">
+        {/* Text Block */}
+        <div className="relative z-10 text-center md:text-left">
+          <h1 className="font-heading text-3xl font-extrabold leading-tight text-white/90 sm:text-5xl lg:text-6xl">
+            {title}
+          </h1>
+          <p className="mt-4 max-w-xl mx-auto text-base text-white/80 sm:mt-6 sm:text-lg md:mx-0 md:mt-8 md:text-xl md:leading-relaxed">
+            {subtitle}
+          </p>
+          <div className="mt-8 flex justify-center md:justify-start sm:mt-10">
+            <Link
+              href={cta.href}
+              className="inline-block rounded-full bg-orange-500 px-6 py-3 text-sm font-semibold text-black transition hover:bg-orange-400 sm:px-8 sm:py-4 sm:text-base focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            >
+              {cta.label}
+            </Link>
           </div>
-          <div className="row overflow-hidden rounded-2xl">
-            <div className="col-12">
-              <div className="row relative justify-center pb-10">
-                <div className="banner-content col-10 pb-10 pt-20 text-center text-white">
-                  {markdownify(
-                    bannerData.title,
-                    "h1",
-                    "mb-8 banner-title opacity-0 text-white",
-                  )}
-                  <div className="banner-btn opacity-0">
-                    <Link
-                      className="btn btn-primary"
-                      href={bannerData.link.href}
-                    >
-                      {bannerData.link.label}
-                    </Link>
-                  </div>
-                </div>
-                <div className="col-10">
-                  <ImageFallback
-                    className="banner-img opacity-0"
-                    src={bannerData.image}
-                    width={1170}
-                    height={666}
-                    priority={true}
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row border-y border-border py-5">
-            <div className="animate from-right col-12">
-              <Swiper
-                loop={true}
-                slidesPerView={3}
-                breakpoints={{
-                  992: {
-                    slidesPerView: 5,
-                  },
-                }}
-                spaceBetween={20}
-                modules={[Autoplay]}
-                autoplay={{ delay: 3000 }}
-              >
-                {brands.map((brand, index) => (
-                  <SwiperSlide
-                    className="h-20 cursor-pointer px-6 py-6 grayscale transition hover:grayscale-0 lg:px-10"
-                    key={"brand-" + index}
-                  >
-                    <div className="relative h-full">
-                      <ImageFallback
-                        className="object-contain"
-                        src={brand}
-                        sizes="100vw"
-                        alt=""
-                        fill={true}
-                        priority={true}
-                      />
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
+        </div>
+
+        {/* Image Block */}
+        <div className="relative z-10 mx-auto w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+          <div className="relative aspect-square w-full">
+            <Image
+              src={image.src}
+              alt={image.alt ?? ""}
+              fill
+              sizes="(max-width: 640px) 90vw, (max-width: 1024px) 50vw, 600px"
+              priority
+              className="rounded-2xl object-cover shadow-[0_0_0_4px_rgba(249,115,22,0.6)]"
+            />
           </div>
         </div>
       </div>
     </section>
   );
-};
+}
 
-export default HomeBanner;
+function DecorShapes() {
+  return (
+    <>
+      <span className="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rotate-12 bg-orange-500/30 opacity-70 blur-2xl md:h-80 md:w-80" />
+      <span className="pointer-events-none absolute -bottom-32 -right-16 h-72 w-72 -rotate-12 bg-pink-500/30 opacity-60 blur-3xl md:h-96 md:w-96" />
+      <span className="pointer-events-none absolute left-1/2 top-8 h-3 w-3 -translate-x-1/2 rounded-full bg-orange-400 md:h-4 md:w-4" />
+    </>
+  );
+}

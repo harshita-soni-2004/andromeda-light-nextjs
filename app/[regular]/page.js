@@ -33,7 +33,7 @@ const RegularPages = async ({ params }) => {
       ) : layout === "contact" ? (
         <Contact data={pageData} />
       ) : layout === "terms-policy" ? (
-        <Default data={pageData} /> //yaha pe terms waala page laga do h kaha ?
+        <Default data={pageData} />
       ) : (
         <Default data={pageData} />
       )}

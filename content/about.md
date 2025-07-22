@@ -6,9 +6,8 @@ draft: false
 ## about us
 about_us:
   subtitle: WHO WE ARE
-  title: Hello, We’re Technology Future IT Solutions, Here To Empower Your Business
-  content: For over 6 years, Technology Future IT Solutions has been a trusted partner in delivering cutting-edge web and app development services. We specialize in building high-quality, user-friendly websites and applications tailored to meet our clients' specific needs. Our team is passionate about creating innovative designs and providing top-notch development services for both web and mobile platforms.
-  image: /images/about/01.jpg
+  title: Hello, We’re Technology Future IT Software, Here To Empower Your Business
+  content: For over 6 years, Technology Future IT Software has been a trusted partner in delivering cutting-edge web and app development services. We specialize in building high-quality, user-friendly websites and applications tailored to meet our clients' specific needs. Our team is passionate about creating innovative designs and providing top-notch development services for both web and mobile platforms.
 
 ## our works
 works:
@@ -16,7 +15,7 @@ works:
   title: What We Do
   list:
     - title: Full-Stack Web Development
-      content: From robust backend systems to responsive frontends, we deliver complete web solutions that are scalable and performance-driven.
+      content: From robust backend systems to responsive frontend, we deliver complete web solutions that are scalable and performance-driven.
     - title: Mobile App Development
       content: We create intuitive and engaging mobile applications for Android and iOS platforms that meet the highest industry standards.
     - title: Creative UI/UX Design
@@ -36,7 +35,6 @@ video:
   subtitle: A SHORT VIDEO
   title: Transforming Ideas Into Reality
   description: Watch how we bring visions to life with our expertise in web and app development. Our dedicated team ensures every project is executed with precision, creativity, and efficiency.
-  video_id: dyZcRRWiuuw
   thumbnail: /images/about/video-popup-2.jpg
 
 ## clients
@@ -63,7 +61,7 @@ our_member:
     - name: Varun Sharma
       field: Frontend Developer
       image: /images/about/team/01.jpg
-    - name: Aryan
+    - name: Aryan Rawat
       field: Backend Developer
       image: /images/about/team/02.jpg
     - name: Harshita Soni

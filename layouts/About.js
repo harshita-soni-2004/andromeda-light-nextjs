@@ -2,27 +2,14 @@
 
 import { markdownify } from "@lib/utils/textConverter";
 import Banner from "./components/Banner";
-import Circle from "./components/Circle";
 import Cta from "./components/Cta";
-import ImageFallback from "./components/ImageFallback";
-import VideoPopup from "./components/VideoPopup";
-
 const About = ({ data }) => {
   const { frontmatter } = data;
-  const {
-    title,
-    about_us,
-    works,
-    mission,
-    video,
-    clients,
-    our_member,
-    our_office,
-  } = frontmatter;
+  const { title, about_us, works, mission, video } = frontmatter;
 
   return (
     <>
-      <section className="bg-gradient-to-b from-black via-zinc-900 to-zinc-950 text-white">
+      <section className="bg-gradient-to-b from-black via-zinc-900 to-zinc-950 text-white pt-24">
         {/* Banner */}
         <Banner title={title} className="text-white" />
 
@@ -31,24 +18,14 @@ const About = ({ data }) => {
           <div className="row items-center justify-center">
             <div className="animate md:col-6 md:order-2 lg:col-5">
               <div className="relative p-[60px] text-white rounded-3xl bg-zinc-800/40 backdrop-blur-md shadow-lg shadow-orange-500/10">
-                <ImageFallback
-                  className="relative w-full rounded-2xl"
-                  src={about_us.image}
-                  width={425}
-                  height={487}
-                  alt=""
-                />
-                <Circle
-                  className="left-4 top-4 z-[-1] animate-pulse opacity-30 blur-2xl"
-                  width={85}
-                  height={85}
-                />
-                <Circle
-                  className="right-10 top-20 z-[-1] opacity-30 blur-2xl"
-                  width={37}
-                  height={37}
-                  fill={false}
-                />
+                <video
+                  src="/videos/banner4.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="rounded-lg max-w-full "
+                ></video>
               </div>
             </div>
             <div className="animate md:col-6 md:order-1 lg:col-4">
@@ -91,18 +68,14 @@ const About = ({ data }) => {
           <div className="row items-center justify-center">
             <div className="animate md:col-6 lg:col-5">
               <div className="relative p-[60px] rounded-3xl bg-zinc-800/40 backdrop-blur-md shadow-lg shadow-orange-500/10">
-                <ImageFallback
-                  className="relative w-full rounded-2xl"
-                  src={mission.image}
-                  width={425}
-                  height={487}
-                  alt=""
-                />
-                <Circle
-                  className="left-4 top-4 z-[-1] animate-pulse opacity-30 blur-2xl"
-                  width={85}
-                  height={85}
-                />
+                <video
+                  src="/videos/banner2.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="rounded-lg  max-w-full"
+                ></video>
               </div>
             </div>
             <div className="animate md:col-6 lg:col-4">
@@ -132,14 +105,14 @@ const About = ({ data }) => {
               </div>
             </div>
             <div className="md:col-6 xl:col-5">
-              <div className="px-4 animate hover:scale-105 transition-transform duration-500 ease-in-out">
-                <VideoPopup
-                  id={video.video_id}
-                  thumbnail={video.thumbnail}
-                  width={540}
-                  height={585}
-                />
-              </div>
+              <video
+                src="/videos/banner3.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="rounded-lg max-w-full"
+              ></video>
             </div>
           </div>
         </div>

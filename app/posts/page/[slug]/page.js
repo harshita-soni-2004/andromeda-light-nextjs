@@ -26,7 +26,7 @@ const BlogPagination = async ({ params }) => {
   return (
     <GSAPWrapper>
       <SeoMeta title={title} />
-      <section className="section pt-0">
+      <section className="section pt-24">
         <Banner title={title} />
         <div className="container">
           <div className="row justify-center pb-16 pt-20 ">

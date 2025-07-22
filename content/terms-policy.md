@@ -4,38 +4,72 @@ description: "this is meta description"
 draft: false
 ---
 
-#### 1. Definitions
+## 1. Definitions
 
-We collect certain identifying personal data when you sign up to our Service such as your name, email address, PayPal address (if different from email address), and telephone number. The personal data we collect from you is disclosed only in accordance with our Terms of Service and/or this Privacy Policy.Conclude collects Slack account and access information from Users for the purposes of connecting to the Slack API and to authenticate access to information on the Conclude website. Whenever you visit our Site, we may collect non-identifying information from you, such as referring URL, browser, operating system, cookie information, and Internet Service Provider. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, this information alone cannot usually be used to identify you.The term “personal data” does not include any anonymized and aggregated data made on the basis of personal data, which are wholly owned by Conclude.
+“Company” means Techno Future Software, its affiliates, and subsidiaries.
 
-#### 2. General Terms
+“Service(s)” refers to all products and services provided by the Company, including but not limited to web and mobile app development, graphic design, AI/ML data analytics, cloud services, cybersecurity solutions, IT audits, digital marketing, UI/UX design, ERP, CRM, and any custom software solutions.
 
-##### Service Provided AS IS
+“User” means any individual or entity that accesses, uses, or purchases the Company’s Services.
 
-The Service is provided for free during this pilot project, and is provided “as is” with no warranty. Conclude will provide User support for the Service, however; Conclude is not committed to any level of service or availability of the Service. A further description of the Service and our user support is available at the Site.
+“Personal Data” means any information that identifies or can be used to identify an individual, including but not limited to name, email, phone number, and payment information.
 
-##### Interoperation with Slack
+We collect Personal Data necessary to provide and improve our Services, handle inquiries, process transactions, and communicate with you. We may also collect non-personally identifiable information, such as browser type, IP address, cookies, and device information. For more details, please refer to our Privacy Policy.
 
-The Service interoperates with Slack.com, and depends on the continuing availability and access to Slack. If for any reason Conclude cannot access or use Slack (including without limitation, change in terms or increase in fees charged by Slack), Conclude may not be able to provide all of the functions of its Service. No refund or credit, if applicable, will be provided for temporary unavailability of Slack (for example, maintenance windows).
+## 2. General Terms
 
-##### Company Liability
+#### 2.1 Service Provided “AS IS”
 
-If you enter into this agreement on behalf of a company, you hereby agree that the company is responsible under this Agreement for all actions and omissions conducted by its designated users of the Service.
+Our Services are provided “AS IS” and “AS AVAILABLE” without warranties of any kind, whether express or implied. While we strive for quality and reliability, we do not warrant that the Services will be uninterrupted, timely, or error-free.
 
-#### 3. Rules of Use
+#### 2.2 Third-Party Dependencies
 
-1. must keep passwords secure and confidential;
-2. are solely responsible for User Data and all activity in their account while using the Service;
-3. must use commercially reasonable efforts to prevent unauthorized access to their account, and notify Conclude promptly of any such unauthorized access; and
-4. may use the Service only in accordance with Conclude’s online user guide and all applicable laws and regulations.
+Some Services may depend on third-party platforms or integrations (e.g., AWS, Azure, Google Cloud, Slack, or other APIs). We cannot guarantee the availability of these third-party services and are not responsible for any loss or interruption they may cause.
 
-###### You must not
+#### 2.3 Company Liability
 
-- Enhance or improve User experience, our Site, or our Service.
-- Process transactions.
-- Send emails about our Site or respond to inquiries.
-- As this Privacy Policy and our Terms of Service.
+If you enter into these Terms on behalf of a company or organization, you represent and warrant that you have the authority to bind that entity. The entity agrees to be responsible for any actions or omissions by its users under these Terms.
 
-##### 5. Intellectual Property Rights
+## 3. Rules of Use
 
-Your information may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the privacy laws may not be as protective as those in your jurisdiction. If you choose to provide information to us, Conclude transfers Personal Information to Google Cloud Platform and processes it there. Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.
+By using our Services, you agree to:
+
+Keep all account credentials secure and confidential.
+
+Be responsible for all activity under your account.
+
+Notify us immediately of any unauthorized access or security breach.
+
+Use the Services only in compliance with applicable laws, regulations, and our user guidelines.
+
+#### 3.1 Prohibited Conduct
+
+You must not:
+
+Use the Services for unlawful, fraudulent, or malicious purposes.
+
+Interfere with or disrupt the performance or integrity of our systems.
+
+Copy, modify, or distribute our intellectual property without permission.
+
+Attempt to gain unauthorized access to our systems or other users’ accounts.
+
+## 4. Intellectual Property Rights
+
+All intellectual property rights in our software, source code, designs, logos, trademarks, and related materials are the exclusive property of Techno Future Software or its licensors. You retain ownership of any data you submit but grant the Company a limited license to process and store it for delivering our Services.
+
+## 5. Data 
+
+By using our Services, you consent to your data being transferred to and processed on servers located in jurisdictions that may have different data protection laws than your own, including but not limited to data processing by trusted third-party providers such as AWS, Azure, and Google Cloud Platform.
+
+## 6. Changes to These Terms
+
+We may update these Terms & Conditions from time to time. Changes will be posted on our website with an updated effective date. Continued use of the Services after changes are made indicates your acceptance of the updated Terms.
+
+## 7. Contact Us
+
+If you have any questions about these Terms & Conditions, please contact us at:
+
+Techno Future Software
+Trivani Nagar, Gopalpura Mod, Tonk Phatak
+📧 technofuturesoftware@gmail.com

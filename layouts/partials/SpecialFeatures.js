@@ -1,4 +1,3 @@
-import ImageFallback from "@layouts/components/ImageFallback";
 import { markdownify } from "@lib/utils/textConverter";
 
 const SpecialFeatures = ({ speciality }) => {
@@ -8,12 +7,16 @@ const SpecialFeatures = ({ speciality }) => {
         {/* Primary Speciality */}
         <div className="row items-center justify-center">
           <div className="animate lg:col-6 lg:order-2">
-            <ImageFallback
-              className="mx-auto"
-              src={speciality.primary.image}
+            <video
+              className="mx-auto rounded-lg shadow-lg"
+              src="/videos/banner11.mp4" // Local video stored in public/videos/
               width={575}
               height={511}
-              alt="primary speciality"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
             />
           </div>
           <div className="animate lg:col-5 lg:order-1">
@@ -36,12 +39,16 @@ const SpecialFeatures = ({ speciality }) => {
         {/* Secondary Speciality */}
         <div className="row items-center mt-16">
           <div className="animate lg:col-6">
-            <ImageFallback
-              className="mx-auto"
-              src={speciality.secondary.image}
+            <video
+              className="mx-auto rounded-lg shadow-lg"
+              src="/videos/banner12.mp4" // Local video stored in public/videos/
               width={575}
               height={511}
-              alt="secondary speciality"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
             />
           </div>
           <div className="animate lg:col-5">

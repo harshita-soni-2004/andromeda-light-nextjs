@@ -3,8 +3,8 @@ banner:
   title: "TFS Techno: Innovating Web &  App Design Solutions"
   image: /images/banner-app.png
   link:
-    label: Get Premium Version
-    href: "/premium"
+    label: Explore Now
+    href: "/contact"
 ##brands
 brands:
   - /images/brands/01-colored.png
@@ -21,7 +21,7 @@ brands:
 features:
   sub_title: SPECIAL FEATURES
   title: UL Tools To Kickstart Your Web & App Development
-  description: With over six years of experience, TFS Techno Feature Solution crafts high-performing web and mobile apps  that bring your ideas to life and help you scale. Our solutions are secure, fast, and easy to use.
+  description: With over six years of experience, TFS Techno Feature Software crafts high-performing web and mobile apps  that bring your ideas to life and help you scale. Our solutions are secure, fast, and easy to use.
   list:
     - icon: "lock"
       title: Enhanced Security
@@ -40,14 +40,14 @@ features:
       content: Built-in advanced security protocols and updates protect your business and customers from evolving online threats.
     - icon: "wind"
       title: Scalable Infrastructure
-      content: Our solutions are built to scale, ensuring your app or website grows as your business expands, without any performance hiccups.
+      content: Our software are built to scale, ensuring your app or website grows as your business expands, without any performance hiccups.
 
 #intro
 intro:
   title: "Exclusively Designed for Your Business Success"
   subtitle: "TFS Techno: Empowering Your Digital Transformation"
   description: |
-    With over 10 years of expertise in web and app development, TFS Techno Features Solution crafts innovative solutions that elevate your business. <br/>
+    With over 10 years of expertise in web and app development, TFS Techno Features Software crafts innovative solutions that elevate your business. <br/>
     Our platform brings your ideas to life with tailored designs, robust security, and seamless functionality, <br/>
     ensuring optimal performance for your digital presence.
   thumbnail: "/images/video-popup.jpg"
@@ -83,7 +83,7 @@ testimonial:
     - author: "Priya Sharma"
       avatar: "/images/user-img/02.jpg"
       profession: "Marketing Director, SmartTech"
-      content: "TFS Techno’s solutions helped streamline our operations and provide an exceptional user experience for our clients."
+      content: "TFS Techno’s software helped streamline our operations and provide an exceptional user experience for our clients."
       description: "The collaboration with TFS Techno was seamless. They understood our goals and worked efficiently to implement solutions that exceeded our expectations. Their approach is both professional and customer-centric."
     - author: "Rohit Kumar"
       avatar: "/images/user-img/03.jpg"
@@ -99,11 +99,11 @@ testimonial:
       avatar: "/images/user-img/05.jpg"
       profession: "Product Manager, Innovate Solutions"
       content: "The project we worked on with TFS Techno exceeded our expectations. Their team’s dedication and expertise made all the difference."
-      description: "Our partnership with TFS Techno has been nothing short of extraordinary. Their ability to understand complex requirements and deliver scalable solutions has helped our product grow exponentially."
+      description: "Our partnership with TFS Techno has been nothing short of extraordinary. Their ability to understand complex requirements and deliver scalable software has helped our product grow exponentially."
     - author: "Ananya Reddy"
       avatar: "/images/user-img/06.jpg"
       profession: "Operations Head, Future Insights"
-      content: "TFS Techno is an exceptional partner for businesses looking to grow and innovate. Their solutions have helped us scale efficiently."
+      content: "TFS Techno is an exceptional partner for businesses looking to grow and innovate. Their projects have helped us scale efficiently."
       description: "The team at TFS Techno not only provided us with scalable web and app solutions but also offered valuable insights into streamlining our operations. Their support has been crucial in helping us achieve sustainable growth."
     - author: "Arjun Joshi"
       avatar: "/images/user-img/07.jpg"

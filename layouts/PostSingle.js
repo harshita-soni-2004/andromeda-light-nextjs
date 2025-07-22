@@ -18,7 +18,7 @@ const PostSingle = ({ frontmatter, content, recentPosts }) => {
   return (
     <>
       <SeoMeta title={title} description={description} image={image} />
-      <section className="section pt-0">
+      <section className="section ">
         <div className="container">
           <article>
             <div className="row justify-center">
@@ -35,7 +35,7 @@ const PostSingle = ({ frontmatter, content, recentPosts }) => {
                 )}
               </div>
               <div className="lg:col-8">
-                {markdownify(title, "h1", "h2 mt-6")}
+                {markdownify(title, "h1", "h2 mt-6 text-white")}
                 <div className="mt-6 flex items-center">
                   <div className="overflow-hidden rounded-full border-2 border-white shadow-[0_0_0_2px] shadow-primary">
                     <ImageFallback
@@ -46,7 +46,7 @@ const PostSingle = ({ frontmatter, content, recentPosts }) => {
                     />
                   </div>
                   <div className="pl-5">
-                    <p className="font-medium text-dark">{author.name}</p>
+                    <p className="font-medium text-white ">{author.name}</p>
                     <p>
                       {dateFormat(date)} - {readingTime(content)}
                     </p>
@@ -56,18 +56,13 @@ const PostSingle = ({ frontmatter, content, recentPosts }) => {
                   <MDXContent content={content} />
                 </div>
               </div>
-              {disqus.enable && (
-                <div className="fade row justify-center ">
-                  <div className="lg:col-8">
-                    <DisqussEmbed />
-                  </div>
-                </div>
-              )}
             </div>
           </article>
 
           <div className="section mt-16">
-            <h2 className="section-title text-center">Recent Articles</h2>
+            <h2 className="section-title text-center text-white">
+              Recent Articles
+            </h2>
             <div className="row justify-center">
               {recentPosts.slice(0, 2).map((post, index) => (
                 <div key={"post-" + index} className="animate mt-16 lg:col-5">

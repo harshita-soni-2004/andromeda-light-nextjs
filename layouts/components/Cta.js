@@ -2,7 +2,6 @@ import config from "@config/config.json";
 import { markdownify } from "@lib/utils/textConverter";
 import Link from "next/link";
 import Circle from "./Circle";
-import ImageFallback from "./ImageFallback";
 
 function Cta() {
   const { title, content, button, enable } = config.call_to_action;
